@@ -1,0 +1,26 @@
+{
+  "table": "users",
+  "rows": [
+    {
+      "username": "test",
+      "password": "sha256:8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "phone": "aes-gcm:yi-phone"
+    }
+  ],
+  "fields": {
+    "口令": {
+      "fact_id": "F-004",
+      "column": "password",
+      "value": "sha256:8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "storage": "hash",
+      "algorithm": "SHA-256"
+    },
+    "手机号": {
+      "fact_id": "F-005",
+      "column": "phone",
+      "value": "aes-gcm:yi-phone",
+      "storage": "ciphertext",
+      "algorithm": "AES"
+    }
+  }
+}

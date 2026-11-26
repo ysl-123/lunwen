@@ -1,0 +1,8 @@
+{
+  "fact_id": "F-003",
+  "observed": false,
+  "password_in_clear": false,
+  "protocol": "HTTP",
+  "suite": "无",
+  "username": null
+}

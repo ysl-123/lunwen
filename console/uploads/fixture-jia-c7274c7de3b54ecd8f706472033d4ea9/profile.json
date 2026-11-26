@@ -1,0 +1,10 @@
+{
+  "fact_id": "F-001",
+  "channel_fact_id": "F-002",
+  "grade": "甲",
+  "protocol": "国密TLS",
+  "suite": "ECC_SM4_CBC_SM3",
+  "cert_signature_algorithm": "SM2-with-SM3",
+  "entry": "gm://127.0.0.1:9443",
+  "note": "甲档夹具"
+}

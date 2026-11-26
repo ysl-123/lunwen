@@ -1,0 +1,45 @@
+[
+  {
+    "id": "F-001",
+    "tool": "current_profile",
+    "data": {
+      "grade": "丙",
+      "entry": "http://127.0.0.1:8000"
+    }
+  },
+  {
+    "id": "F-002",
+    "tool": "channel_facts",
+    "data": {
+      "protocol": "HTTP",
+      "suite": "无",
+      "cert_signature_algorithm": null
+    }
+  },
+  {
+    "id": "F-003",
+    "tool": "login_observation",
+    "data": {
+      "observed": true,
+      "password_in_clear": true,
+      "protocol": "HTTP",
+      "suite": "无"
+    }
+  },
+  {
+    "id": "F-004",
+    "tool": "field_storage",
+    "data": {
+      "field": "口令",
+      "storage": "plaintext"
+    }
+  },
+  {
+    "id": "F-005",
+    "tool": "field_storage",
+    "data": {
+      "field": "手机号",
+      "storage": "plaintext"
+    }
+  }
+]

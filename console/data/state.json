@@ -1,0 +1,940 @@
+{
+  "archive": {
+    "system_name": "丙档演示系统",
+    "level": "第三级",
+    "business": "登录后查看本人手机号",
+    "entry": "gm://127.0.0.1:9443",
+    "grade": "甲",
+    "evidence_dir": "D:\\lunwen\\lab\\evidence",
+    "important_password": "1",
+    "important_phone": "1"
+  },
+  "errors": [],
+  "message": "判定完成。",
+  "collected": true,
+  "plan_seen": true,
+  "facts": [
+    {
+      "id": "F-001",
+      "tool": "current_profile",
+      "data": {
+        "grade": "丙",
+        "entry": "http://127.0.0.1:8000"
+      }
+    },
+    {
+      "id": "F-002",
+      "tool": "channel_facts",
+      "data": {
+        "protocol": "HTTP",
+        "suite": "无",
+        "cert_signature_algorithm": null,
+        "note": "丙档夹具"
+      }
+    },
+    {
+      "id": "F-003",
+      "tool": "login_observation",
+      "data": {
+        "observed": true,
+        "password_in_clear": true,
+        "protocol": "HTTP",
+        "suite": "无"
+      }
+    },
+    {
+      "id": "F-004",
+      "tool": "field_storage",
+      "data": {
+        "field": "口令",
+        "storage": "plaintext",
+        "algorithm": null
+      }
+    },
+    {
+      "id": "F-005",
+      "tool": "field_storage",
+      "data": {
+        "field": "手机号",
+        "storage": "plaintext",
+        "algorithm": null
+      }
+    },
+    {
+      "id": "F-006",
+      "tool": "current_profile",
+      "data": {
+        "topic": "app_login",
+        "method": "plaintext"
+      }
+    },
+    {
+      "id": "F-007",
+      "tool": "current_profile",
+      "data": {
+        "topic": "user_columns",
+        "columns": [
+          "id",
+          "username",
+          "password",
+          "phone"
+        ],
+        "integrity_columns": []
+      }
+    },
+    {
+      "id": "F-008",
+      "tool": "current_profile",
+      "data": {
+        "topic": "routes",
+        "paths": [
+          "/",
+          "/login",
+          "/profile",
+          "/logout",
+          "/health"
+        ],
+        "remote_admin": false
+      }
+    },
+    {
+      "id": "F-009",
+      "tool": "current_profile",
+      "data": {
+        "topic": "security_label",
+        "present": false
+      }
+    },
+    {
+      "id": "F-010",
+      "tool": "current_profile",
+      "data": {
+        "topic": "log_integrity",
+        "present": false
+      }
+    },
+    {
+      "id": "F-011",
+      "tool": "current_profile",
+      "data": {
+        "topic": "executable_integrity",
+        "present": false
+      }
+    },
+    {
+      "id": "F-012",
+      "tool": "current_profile",
+      "data": {
+        "topic": "non_repudiation",
+        "present": false
+      }
+    },
+    {
+      "id": "F-013",
+      "tool": "current_profile",
+      "data": {
+        "topic": "access_control_integrity",
+        "present": false
+      }
+    },
+    {
+      "id": "F-014",
+      "tool": "current_profile",
+      "data": {
+        "topic": "device_login",
+        "present": false
+      }
+    },
+    {
+      "id": "F-015",
+      "tool": "current_profile",
+      "data": {
+        "topic": "transfer_integrity",
+        "present": false
+      }
+    },
+    {
+      "id": "F-CL-PHY-AUTH",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PHY-AUTH",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PHY-GATE",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PHY-GATE",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PHY-VIDEO",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PHY-VIDEO",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-MGMT-POLICY",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "MGMT-POLICY",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-MGMT-PROCEDURE",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "MGMT-PROCEDURE",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-MGMT-REVIEW",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "MGMT-REVIEW",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-MGMT-PUBLISH",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "MGMT-PUBLISH",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-MGMT-RECORD",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "MGMT-RECORD",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PE-LAW",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PE-LAW",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PE-DUTY",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PE-DUTY",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PE-TRAIN",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PE-TRAIN",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PE-ASSESS",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PE-ASSESS",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-PE-SECRET",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "PE-SECRET",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-BUILD-SCHEME",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "BUILD-SCHEME",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-BUILD-KEY",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "BUILD-KEY",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-BUILD-IMPL",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "BUILD-IMPL",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-BUILD-EVAL",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "BUILD-EVAL",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-BUILD-RUN",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "BUILD-RUN",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-EMG-PREP",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "EMG-PREP",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-EMG-ACT",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "EMG-ACT",
+        "filename": ""
+      }
+    },
+    {
+      "id": "F-CL-EMG-REPORT",
+      "tool": "current_profile",
+      "data": {
+        "clause_id": "EMG-REPORT",
+        "filename": ""
+      }
+    }
+  ],
+  "report": "送评前预检，非正式密评\n\n未授权系统不在范围内，最终以专业人员测评为准。以下为自测参考，不是正式密评结论。\n\n## 不符合项\n\n### 存储机密性\n参考结论：不符合\n事实编号：F-004、F-005\n条款出处：条款卡 APP-STORE-CONF（GB/T 39786）\n原文摘录：应采用密码技术保证重要数据在存储过程中的机密性。\n对象：登录口令字段、资料页手机号字段\n理由：事实 F-004 显示口令为明文、事实 F-005 显示手机号为明文。重要数据（口令、手机号）在库中原样存放。\n修改建议：口令和手机号不要以明文入库。本阶段只记录建议，不改数据库。\n\n### 应用身份鉴别\n参考结论：不符合\n事实编号：F-006\n条款出处：条款卡 APP-AUTH（GB/T 39786）\n原文摘录：应采用密码技术对登录用户进行身份鉴别，保证应用系统用户身份的真实性。\n对象：应用登录口令\n理由：事实 F-006 显示应用登录按明文比对口令。\n修改建议：口令不要按原样比对。本阶段只记录建议，不改登录逻辑。\n\n### 通信机密性\n参考结论：不符合\n事实编号：F-002、F-003\n条款出处：条款卡 NET-CONF（GB/T 39786）\n原文摘录：应采用密码技术保证通信过程中重要数据的机密性。\n对象：浏览器到网站的信道\n理由：事实 F-002 记录协议为 HTTP；事实 F-003 记录口令以明文出现。通信过程中的重要数据没有机密性保护。\n修改建议：为信道加上机密性保护后再复测。本阶段只做丙档预检，不切换配置。\n\n### 重要数据传输机密性\n参考结论：不符合\n事实编号：F-002、F-003\n条款出处：条款卡 APP-TRANS-CONF（GB/T 39786）\n原文摘录：应采用密码技术保证重要数据在传输过程中的机密性。\n对象：重要数据传输\n理由：事实 F-002 记录协议为 HTTP；事实 F-003 记录口令以明文出现。通信过程中的重要数据没有机密性保护。\n修改建议：为信道加上机密性保护后再复测。本阶段只做丙档预检，不切换配置。\n\n### 算法合规性\n参考结论：不符合\n事实编号：F-002、F-004、F-005\n条款出处：条款卡 通用检查（通用检查，不单独打分）\n原文摘录：国际算法出现在重要数据保护上时，预检标成需要处理。\n对象：信道、口令、手机号\n理由：事实 F-002 的信道算法族为无；事实 F-004 的口令没有密码算法；事实 F-005 的手机号没有密码算法。重要数据保护没有全部使用 SM2、SM3、SM4。\n修改建议：已加密不等于算法合规。国际算法或明文都要单独标出。\n\n## 未提供\n\n### 物理访问身份鉴别\n参考结论：未提供\n条款出处：条款卡 PHY-AUTH（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 电子门禁记录存储完整性\n参考结论：未提供\n条款出处：条款卡 PHY-GATE（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 视频监控记录存储完整性\n参考结论：未提供\n条款出处：条款卡 PHY-VIDEO（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 密码应用安全管理制度\n参考结论：未提供\n条款出处：条款卡 MGMT-POLICY（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 操作规程\n参考结论：未提供\n条款出处：条款卡 MGMT-PROCEDURE（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 制度修订\n参考结论：未提供\n条款出处：条款卡 MGMT-REVIEW（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 制度发布\n参考结论：未提供\n条款出处：条款卡 MGMT-PUBLISH（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 制度执行记录\n参考结论：未提供\n条款出处：条款卡 MGMT-RECORD（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 人员遵守法律法规\n参考结论：未提供\n条款出处：条款卡 PE-LAW（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 岗位责任\n参考结论：未提供\n条款出处：条款卡 PE-DUTY（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 上岗培训\n参考结论：未提供\n条款出处：条款卡 PE-TRAIN（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 人员考核\n参考结论：未提供\n条款出处：条款卡 PE-ASSESS（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 保密与调离\n参考结论：未提供\n条款出处：条款卡 PE-SECRET（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 密码应用方案\n参考结论：未提供\n条款出处：条款卡 BUILD-SCHEME（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 密钥安全管理策略\n参考结论：未提供\n条款出处：条款卡 BUILD-KEY（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 按方案实施\n参考结论：未提供\n条款出处：条款卡 BUILD-IMPL（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 运行前评估\n参考结论：未提供\n条款出处：条款卡 BUILD-EVAL（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 运行中执行与复评\n参考结论：未提供\n条款出处：条款卡 BUILD-RUN（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 应急策略\n参考结论：未提供\n条款出处：条款卡 EMG-PREP（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 应急启动\n参考结论：未提供\n条款出处：条款卡 EMG-ACT（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n### 处置后报告\n参考结论：未提供\n条款出处：条款卡 EMG-REPORT（GB/T 39786）\n理由：本次提交里没有该条制度文件，本项保持未提供。\n\n## 证据不足\n\n### 设备身份鉴别\n参考结论：证据不足\n事实编号：F-014\n条款出处：条款卡 DEV-AUTH（GB/T 39786）\n理由：事实 F-014：配置导出没有设备登录鉴别措施。看不出来的项不写成不符合。\n\n### 远程管理通道\n参考结论：证据不足\n事实编号：F-008\n条款出处：条款卡 DEV-REMOTE（GB/T 39786）\n理由：事实 F-008：配置导出的路由里没有远程管理入口。看不出来的项不写成不符合。\n\n### 系统资源访问控制信息完整性\n参考结论：证据不足\n事实编号：F-013\n条款出处：条款卡 DEV-ACL（GB/T 39786）\n理由：事实 F-013：配置导出没有系统资源访问控制信息的完整性措施。看不出来的项不写成不符合。\n\n### 重要信息资源安全标记完整性\n参考结论：证据不足\n事实编号：F-009\n条款出处：条款卡 DEV-LABEL（GB/T 39786）\n理由：事实 F-009：配置导出没有安全标记完整性措施。看不出来的项不写成不符合。\n\n### 日志记录完整性\n参考结论：证据不足\n事实编号：F-010\n条款出处：条款卡 DEV-LOG（GB/T 39786）\n理由：事实 F-010：配置导出没有日志完整性措施。看不出来的项不写成不符合。\n\n### 重要可执行程序完整性\n参考结论：证据不足\n事实编号：F-011\n条款出处：条款卡 DEV-BIN（GB/T 39786）\n理由：事实 F-011：配置导出没有重要可执行程序完整性措施。看不出来的项不写成不符合。\n\n### 访问控制信息完整性\n参考结论：证据不足\n事实编号：F-013\n条款出处：条款卡 APP-ACL（GB/T 39786）\n理由：事实 F-013：配置导出没有应用访问控制信息的完整性措施。看不出来的项不写成不符合。\n\n### 重要数据传输完整性\n参考结论：证据不足\n事实编号：F-015\n条款出处：条款卡 APP-TRANS-INT（GB/T 39786）\n理由：事实 F-015：配置导出没有传输完整性措施。看不出来的项不写成不符合。\n\n### 重要数据存储完整性\n参考结论：证据不足\n事实编号：F-007\n条款出处：条款卡 APP-STORE-INT（GB/T 39786）\n理由：事实 F-007：用户表导出里没有完整性字段。看不出来的项不写成不符合。\n\n### 不可否认性\n参考结论：证据不足\n事实编号：F-012\n条款出处：条款卡 APP-NR（GB/T 39786）\n理由：事实 F-012：配置导出没有不可否认证据。看不出来的项不写成不符合。\n\n## 其余参考结论\n\n## 采集事实\n\n- F-001（current_profile）：{\"grade\": \"丙\", \"entry\": \"http://127.0.0.1:8000\"}\n- F-002（channel_facts）：{\"protocol\": \"HTTP\", \"suite\": \"无\", \"cert_signature_algorithm\": null, \"note\": \"丙档夹具\"}\n- F-003（login_observation）：{\"observed\": true, \"password_in_clear\": true, \"protocol\": \"HTTP\", \"suite\": \"无\"}\n- F-004（field_storage）：{\"field\": \"口令\", \"storage\": \"plaintext\", \"algorithm\": null}\n- F-005（field_storage）：{\"field\": \"手机号\", \"storage\": \"plaintext\", \"algorithm\": null}\n- F-006（current_profile）：{\"topic\": \"app_login\", \"method\": \"plaintext\"}\n- F-007（current_profile）：{\"topic\": \"user_columns\", \"columns\": [\"id\", \"username\", \"password\", \"phone\"], \"integrity_columns\": []}\n- F-008（current_profile）：{\"topic\": \"routes\", \"paths\": [\"/\", \"/login\", \"/profile\", \"/logout\", \"/health\"], \"remote_admin\": false}\n- F-009（current_profile）：{\"topic\": \"security_label\", \"present\": false}\n- F-010（current_profile）：{\"topic\": \"log_integrity\", \"present\": false}\n- F-011（current_profile）：{\"topic\": \"executable_integrity\", \"present\": false}\n- F-012（current_profile）：{\"topic\": \"non_repudiation\", \"present\": false}\n- F-013（current_profile）：{\"topic\": \"access_control_integrity\", \"present\": false}\n- F-014（current_profile）：{\"topic\": \"device_login\", \"present\": false}\n- F-015（current_profile）：{\"topic\": \"transfer_integrity\", \"present\": false}\n- F-CL-PHY-AUTH（current_profile）：{\"clause_id\": \"PHY-AUTH\", \"filename\": \"\"}\n- F-CL-PHY-GATE（current_profile）：{\"clause_id\": \"PHY-GATE\", \"filename\": \"\"}\n- F-CL-PHY-VIDEO（current_profile）：{\"clause_id\": \"PHY-VIDEO\", \"filename\": \"\"}\n- F-CL-MGMT-POLICY（current_profile）：{\"clause_id\": \"MGMT-POLICY\", \"filename\": \"\"}\n- F-CL-MGMT-PROCEDURE（current_profile）：{\"clause_id\": \"MGMT-PROCEDURE\", \"filename\": \"\"}\n- F-CL-MGMT-REVIEW（current_profile）：{\"clause_id\": \"MGMT-REVIEW\", \"filename\": \"\"}\n- F-CL-MGMT-PUBLISH（current_profile）：{\"clause_id\": \"MGMT-PUBLISH\", \"filename\": \"\"}\n- F-CL-MGMT-RECORD（current_profile）：{\"clause_id\": \"MGMT-RECORD\", \"filename\": \"\"}\n- F-CL-PE-LAW（current_profile）：{\"clause_id\": \"PE-LAW\", \"filename\": \"\"}\n- F-CL-PE-DUTY（current_profile）：{\"clause_id\": \"PE-DUTY\", \"filename\": \"\"}\n- F-CL-PE-TRAIN（current_profile）：{\"clause_id\": \"PE-TRAIN\", \"filename\": \"\"}\n- F-CL-PE-ASSESS（current_profile）：{\"clause_id\": \"PE-ASSESS\", \"filename\": \"\"}\n- F-CL-PE-SECRET（current_profile）：{\"clause_id\": \"PE-SECRET\", \"filename\": \"\"}\n- F-CL-BUILD-SCHEME（current_profile）：{\"clause_id\": \"BUILD-SCHEME\", \"filename\": \"\"}\n- F-CL-BUILD-KEY（current_profile）：{\"clause_id\": \"BUILD-KEY\", \"filename\": \"\"}\n- F-CL-BUILD-IMPL（current_profile）：{\"clause_id\": \"BUILD-IMPL\", \"filename\": \"\"}\n- F-CL-BUILD-EVAL（current_profile）：{\"clause_id\": \"BUILD-EVAL\", \"filename\": \"\"}\n- F-CL-BUILD-RUN（current_profile）：{\"clause_id\": \"BUILD-RUN\", \"filename\": \"\"}\n- F-CL-EMG-PREP（current_profile）：{\"clause_id\": \"EMG-PREP\", \"filename\": \"\"}\n- F-CL-EMG-ACT（current_profile）：{\"clause_id\": \"EMG-ACT\", \"filename\": \"\"}\n- F-CL-EMG-REPORT（current_profile）：{\"clause_id\": \"EMG-REPORT\", \"filename\": \"\"}\n",
+  "submission": "20261126194003624417",
+  "judgments": [
+    {
+      "unit_id": "U06",
+      "name": "通信机密性",
+      "clause_id": "NET-CONF",
+      "clause_title": "通信过程中重要数据的机密性",
+      "excerpt": "应采用密码技术保证通信过程中重要数据的机密性。",
+      "standard": "GB/T 39786",
+      "object": "浏览器到网站的信道",
+      "result": "不符合",
+      "fact_ids": [
+        "F-002",
+        "F-003"
+      ],
+      "source": "条款卡 NET-CONF（GB/T 39786）",
+      "reason": "事实 F-002 记录协议为 HTTP；事实 F-003 记录口令以明文出现。通信过程中的重要数据没有机密性保护。",
+      "suggestion": "为信道加上机密性保护后再复测。本阶段只做丙档预检，不切换配置。",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U17",
+      "name": "重要数据传输机密性",
+      "clause_id": "APP-TRANS-CONF",
+      "clause_title": "重要数据传输机密性",
+      "excerpt": "应采用密码技术保证重要数据在传输过程中的机密性。",
+      "standard": "GB/T 39786",
+      "object": "重要数据传输",
+      "result": "不符合",
+      "fact_ids": [
+        "F-002",
+        "F-003"
+      ],
+      "source": "条款卡 APP-TRANS-CONF（GB/T 39786）",
+      "reason": "事实 F-002 记录协议为 HTTP；事实 F-003 记录口令以明文出现。通信过程中的重要数据没有机密性保护。",
+      "suggestion": "为信道加上机密性保护后再复测。本阶段只做丙档预检，不切换配置。",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U18",
+      "name": "存储机密性",
+      "clause_id": "APP-STORE-CONF",
+      "clause_title": "重要数据存储机密性",
+      "excerpt": "应采用密码技术保证重要数据在存储过程中的机密性。",
+      "standard": "GB/T 39786",
+      "object": "登录口令字段、资料页手机号字段",
+      "result": "不符合",
+      "fact_ids": [
+        "F-004",
+        "F-005"
+      ],
+      "source": "条款卡 APP-STORE-CONF（GB/T 39786）",
+      "reason": "事实 F-004 显示口令为明文、事实 F-005 显示手机号为明文。重要数据（口令、手机号）在库中原样存放。",
+      "suggestion": "口令和手机号不要以明文入库。本阶段只记录建议，不改数据库。",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U15",
+      "name": "应用身份鉴别",
+      "clause_id": "APP-AUTH",
+      "clause_title": "身份鉴别",
+      "excerpt": "应采用密码技术对登录用户进行身份鉴别，保证应用系统用户身份的真实性。",
+      "standard": "GB/T 39786",
+      "object": "应用登录口令",
+      "result": "不符合",
+      "fact_ids": [
+        "F-006"
+      ],
+      "source": "条款卡 APP-AUTH（GB/T 39786）",
+      "reason": "事实 F-006 显示应用登录按明文比对口令。",
+      "suggestion": "口令不要按原样比对。本阶段只记录建议，不改登录逻辑。",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U09",
+      "name": "设备身份鉴别",
+      "clause_id": "DEV-AUTH",
+      "clause_title": "身份鉴别",
+      "excerpt": "应采用密码技术对登录设备的用户进行身份鉴别，保证用户身份的真实性。",
+      "standard": "GB/T 39786",
+      "object": "设备登录",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-014"
+      ],
+      "source": "条款卡 DEV-AUTH（GB/T 39786）",
+      "reason": "事实 F-014：配置导出没有设备登录鉴别措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U10",
+      "name": "远程管理通道",
+      "clause_id": "DEV-REMOTE",
+      "clause_title": "远程管理通道",
+      "excerpt": "远程管理设备时，应采用密码技术建立安全的信息传输通道。",
+      "standard": "GB/T 39786",
+      "object": "远程管理入口",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-008"
+      ],
+      "source": "条款卡 DEV-REMOTE（GB/T 39786）",
+      "reason": "事实 F-008：配置导出的路由里没有远程管理入口。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": true,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U11",
+      "name": "系统资源访问控制信息完整性",
+      "clause_id": "DEV-ACL",
+      "clause_title": "系统资源访问控制信息完整性",
+      "excerpt": "应采用密码技术保证系统资源访问控制信息的完整性。",
+      "standard": "GB/T 39786",
+      "object": "系统资源访问控制信息",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-013"
+      ],
+      "source": "条款卡 DEV-ACL（GB/T 39786）",
+      "reason": "事实 F-013：配置导出没有系统资源访问控制信息的完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U12",
+      "name": "重要信息资源安全标记完整性",
+      "clause_id": "DEV-LABEL",
+      "clause_title": "重要信息资源安全标记完整性",
+      "excerpt": "宜采用密码技术保证设备中重要信息资源安全标记的完整性。",
+      "standard": "GB/T 39786",
+      "object": "重要信息资源安全标记",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-009"
+      ],
+      "source": "条款卡 DEV-LABEL（GB/T 39786）",
+      "reason": "事实 F-009：配置导出没有安全标记完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "宜"
+    },
+    {
+      "unit_id": "U13",
+      "name": "日志记录完整性",
+      "clause_id": "DEV-LOG",
+      "clause_title": "日志记录完整性",
+      "excerpt": "应采用密码技术保证日志记录的完整性。",
+      "standard": "GB/T 39786",
+      "object": "日志记录",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-010"
+      ],
+      "source": "条款卡 DEV-LOG（GB/T 39786）",
+      "reason": "事实 F-010：配置导出没有日志完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U14",
+      "name": "重要可执行程序完整性",
+      "clause_id": "DEV-BIN",
+      "clause_title": "重要可执行程序完整性",
+      "excerpt": "应采用密码技术对重要可执行程序进行完整性保护，并对其来源进行真实性验证。",
+      "standard": "GB/T 39786",
+      "object": "重要可执行程序",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-011"
+      ],
+      "source": "条款卡 DEV-BIN（GB/T 39786）",
+      "reason": "事实 F-011：配置导出没有重要可执行程序完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U16",
+      "name": "访问控制信息完整性",
+      "clause_id": "APP-ACL",
+      "clause_title": "访问控制信息完整性",
+      "excerpt": "应采用密码技术保证信息系统应用的访问控制信息的完整性。",
+      "standard": "GB/T 39786",
+      "object": "应用访问控制信息",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-013"
+      ],
+      "source": "条款卡 APP-ACL（GB/T 39786）",
+      "reason": "事实 F-013：配置导出没有应用访问控制信息的完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U19",
+      "name": "重要数据传输完整性",
+      "clause_id": "APP-TRANS-INT",
+      "clause_title": "重要数据传输完整性",
+      "excerpt": "应采用密码技术保证重要数据在传输过程中的完整性。",
+      "standard": "GB/T 39786",
+      "object": "重要数据传输",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-015"
+      ],
+      "source": "条款卡 APP-TRANS-INT（GB/T 39786）",
+      "reason": "事实 F-015：配置导出没有传输完整性措施。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U20",
+      "name": "重要数据存储完整性",
+      "clause_id": "APP-STORE-INT",
+      "clause_title": "重要数据存储完整性",
+      "excerpt": "应采用密码技术保证重要数据在存储过程中的完整性。",
+      "standard": "GB/T 39786",
+      "object": "用户表",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-007"
+      ],
+      "source": "条款卡 APP-STORE-INT（GB/T 39786）",
+      "reason": "事实 F-007：用户表导出里没有完整性字段。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U21",
+      "name": "不可否认性",
+      "clause_id": "APP-NR",
+      "clause_title": "不可否认性",
+      "excerpt": "在可能涉及法律责任认定的应用中，宜采用密码技术提供数据原发证据和数据接收证据，实现数据原发行为的不可否认性和数据接收行为的不可否认性。",
+      "standard": "GB/T 39786",
+      "object": "业务操作",
+      "result": "证据不足",
+      "fact_ids": [
+        "F-012"
+      ],
+      "source": "条款卡 APP-NR（GB/T 39786）",
+      "reason": "事实 F-012：配置导出没有不可否认证据。看不出来的项不写成不符合。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "宜"
+    },
+    {
+      "unit_id": "U01",
+      "name": "物理访问身份鉴别",
+      "clause_id": "PHY-AUTH",
+      "clause_title": "物理访问身份鉴别",
+      "excerpt": "宜采用密码技术进行物理访问身份鉴别，保证重要区域进入人员身份的真实性。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PHY-AUTH（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "宜"
+    },
+    {
+      "unit_id": "U02",
+      "name": "电子门禁记录存储完整性",
+      "clause_id": "PHY-GATE",
+      "clause_title": "电子门禁记录存储完整性",
+      "excerpt": "宜采用密码技术保证电子门禁系统进出记录数据的存储完整性。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PHY-GATE（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "宜"
+    },
+    {
+      "unit_id": "U03",
+      "name": "视频监控记录存储完整性",
+      "clause_id": "PHY-VIDEO",
+      "clause_title": "视频监控记录存储完整性",
+      "excerpt": "宜采用密码技术保证视频监控音像记录数据的存储完整性。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PHY-VIDEO（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "宜"
+    },
+    {
+      "unit_id": "U22",
+      "name": "密码应用安全管理制度",
+      "clause_id": "MGMT-POLICY",
+      "clause_title": "密码应用安全管理制度",
+      "excerpt": "应具备密码应用安全管理制度，包括密码人员管理、密钥管理、建设运行、应急处置、密码软硬件及介质管理等制度。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 MGMT-POLICY（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U23",
+      "name": "操作规程",
+      "clause_id": "MGMT-PROCEDURE",
+      "clause_title": "操作规程",
+      "excerpt": "应根据密码应用安全管理制度制定操作规程。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 MGMT-PROCEDURE（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U24",
+      "name": "制度修订",
+      "clause_id": "MGMT-REVIEW",
+      "clause_title": "制度修订",
+      "excerpt": "应定期对密码应用安全管理制度和操作规程的合理性和适用性进行论证和审定，对存在不足的制度进行修订。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 MGMT-REVIEW（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U25",
+      "name": "制度发布",
+      "clause_id": "MGMT-PUBLISH",
+      "clause_title": "制度发布",
+      "excerpt": "应明确相关密码应用安全管理制度和操作规程的发布流程并进行版本控制。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 MGMT-PUBLISH（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U26",
+      "name": "制度执行记录",
+      "clause_id": "MGMT-RECORD",
+      "clause_title": "制度执行记录",
+      "excerpt": "应具有密码应用操作规程的相关执行记录并妥善保存。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 MGMT-RECORD（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U27",
+      "name": "人员遵守法律法规",
+      "clause_id": "PE-LAW",
+      "clause_title": "人员遵守法律法规",
+      "excerpt": "相关人员应了解并遵守密码相关法律法规和密码应用安全管理制度。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PE-LAW（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U28",
+      "name": "岗位责任",
+      "clause_id": "PE-DUTY",
+      "clause_title": "岗位责任",
+      "excerpt": "应建立密码应用岗位责任制度，明确各岗位在安全系统中的职责和权限。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PE-DUTY（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U29",
+      "name": "上岗培训",
+      "clause_id": "PE-TRAIN",
+      "clause_title": "上岗培训",
+      "excerpt": "应建立上岗人员培训制度，对涉及密码的操作和管理人员进行专门培训。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PE-TRAIN（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U30",
+      "name": "人员考核",
+      "clause_id": "PE-ASSESS",
+      "clause_title": "人员考核",
+      "excerpt": "应定期对密码应用安全岗位人员进行考核。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PE-ASSESS（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U31",
+      "name": "保密与调离",
+      "clause_id": "PE-SECRET",
+      "clause_title": "保密与调离",
+      "excerpt": "应建立关键岗位人员保密制度和调离制度，签订保密合同，承担保密义务。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 PE-SECRET（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U32",
+      "name": "密码应用方案",
+      "clause_id": "BUILD-SCHEME",
+      "clause_title": "密码应用方案",
+      "excerpt": "应依据密码相关标准和密码应用需求制定密码应用方案。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 BUILD-SCHEME（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U33",
+      "name": "密钥安全管理策略",
+      "clause_id": "BUILD-KEY",
+      "clause_title": "密钥安全管理策略",
+      "excerpt": "应根据密码应用方案确定系统涉及的密钥种类、体系及其生命周期环节，并明确各环节安全管理要求。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 BUILD-KEY（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U34",
+      "name": "按方案实施",
+      "clause_id": "BUILD-IMPL",
+      "clause_title": "按方案实施",
+      "excerpt": "应按照密码应用方案实施建设。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 BUILD-IMPL（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U35",
+      "name": "运行前评估",
+      "clause_id": "BUILD-EVAL",
+      "clause_title": "运行前评估",
+      "excerpt": "投入运行前应进行密码应用安全性评估，评估通过后系统方可正式运行。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 BUILD-EVAL（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U36",
+      "name": "运行中执行与复评",
+      "clause_id": "BUILD-RUN",
+      "clause_title": "运行中执行与复评",
+      "excerpt": "在运行过程中应严格执行密码应用安全管理制度，并定期开展密码应用安全性评估及整改。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 BUILD-RUN（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U37",
+      "name": "应急策略",
+      "clause_id": "EMG-PREP",
+      "clause_title": "应急策略",
+      "excerpt": "应制定密码应用应急策略，做好应急资源准备。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 EMG-PREP（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U38",
+      "name": "应急启动",
+      "clause_id": "EMG-ACT",
+      "clause_title": "应急启动",
+      "excerpt": "事件发生后应及时向信息系统责任单位报告，并立即启动应急处置措施。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 EMG-ACT（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "U39",
+      "name": "处置后报告",
+      "clause_id": "EMG-REPORT",
+      "clause_title": "处置后报告",
+      "excerpt": "事件处置完成后应及时向信息系统责任单位及归属的密码管理部门报告事件发生情况及处置情况。",
+      "standard": "GB/T 39786",
+      "object": "材料文件",
+      "result": "未提供",
+      "fact_ids": [],
+      "source": "条款卡 EMG-REPORT（GB/T 39786）",
+      "reason": "本次提交里没有该条制度文件，本项保持未提供。",
+      "suggestion": "",
+      "high_risk": false,
+      "strength": "应"
+    },
+    {
+      "unit_id": "ALG",
+      "name": "算法合规性",
+      "clause_id": "通用检查",
+      "clause_title": "算法合规性",
+      "excerpt": "国际算法出现在重要数据保护上时，预检标成需要处理。",
+      "standard": "通用检查，不单独打分",
+      "object": "信道、口令、手机号",
+      "result": "不符合",
+      "fact_ids": [
+        "F-002",
+        "F-004",
+        "F-005"
+      ],
+      "source": "条款卡 通用检查（通用检查，不单独打分）",
+      "reason": "事实 F-002 的信道算法族为无；事实 F-004 的口令没有密码算法；事实 F-005 的手机号没有密码算法。重要数据保护没有全部使用 SM2、SM3、SM4。",
+      "suggestion": "已加密不等于算法合规。国际算法或明文都要单独标出。",
+      "high_risk": false,
+      "strength": ""
+    }
+  ]
+}

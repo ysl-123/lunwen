@@ -1,0 +1,6 @@
+{
+  "present": true,
+  "signature_algorithm": "sha256WithRSAEncryption",
+  "dual_cert": false,
+  "note": "手写证书摘要，签名算法为 sha256WithRSAEncryption"
+}

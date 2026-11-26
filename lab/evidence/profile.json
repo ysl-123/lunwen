@@ -1,0 +1,10 @@
+{
+  "fact_id": "F-001",
+  "channel_fact_id": "F-002",
+  "grade": "丙",
+  "protocol": "HTTP",
+  "suite": "无",
+  "cert_signature_algorithm": null,
+  "entry": "http://127.0.0.1:8000",
+  "note": ""
+}

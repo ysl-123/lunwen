@@ -1,0 +1,22 @@
+{
+  "table": "users",
+  "rows": [
+    {"username": "test", "password": "sm3:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef", "phone": "sm4:jia-phone"}
+  ],
+  "fields": {
+    "口令": {
+      "fact_id": "F-004",
+      "column": "password",
+      "value": "sm3:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "storage": "hash",
+      "algorithm": "SM3"
+    },
+    "手机号": {
+      "fact_id": "F-005",
+      "column": "phone",
+      "value": "sm4:jia-phone",
+      "storage": "ciphertext",
+      "algorithm": "SM4"
+    }
+  }
+}

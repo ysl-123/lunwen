@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}结果 · 自测台{% endblock %}
+{% block body %}
+<h1>结果</h1>
+<p>技术项的参考结论是：符合、部分符合、不符合、证据不足。清单没有真实文件是未提供；文件对不上条款原文是证据不足。</p>
+<table>
+  <thead>
+    <tr>
+      <th>条款</th>
+      <th>对象</th>
+      <th>参考结论</th>
+      <th>事实编号</th>
+      <th>出处</th>
+      <th>理由</th>
+      <th>建议</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in judgments %}
+    <tr>
+      <td>{{ item.name }}<br>{{ item.excerpt }}</td>
+      <td>{{ item.object }}</td>
+      <td class="{% if item.result == '不符合' %}bad{% endif %}">{{ item.result }}</td>
+      <td>{{ item.fact_ids | join("、") }}</td>
+      <td>{{ item.source }}</td>
+      <td>{{ item.reason }}</td>
+      <td>{{ item.suggestion }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<h2>事实</h2>
+<table>
+  <thead>
+    <tr><th>编号</th><th>采集</th><th>内容</th></tr>
+  </thead>
+  <tbody>
+    {% for fact in facts %}
+    <tr>
+      <td>{{ fact.id }}</td>
+      <td>{{ fact.tool }}</td>
+      <td>{{ fact.data }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p><a class="btn" href="/report">打开报告</a></p>
+{% endblock %}

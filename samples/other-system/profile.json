@@ -1,0 +1,10 @@
+{
+  "fact_id": "F-001",
+  "channel_fact_id": "F-002",
+  "grade": "其他",
+  "protocol": "TLS",
+  "suite": "ECDHE-RSA-AES128-GCM-SHA256",
+  "cert_signature_algorithm": "sha256WithRSAEncryption",
+  "entry": "https://127.0.0.1:8443",
+  "note": "手写的其他系统证据，不随演示档位变化"
+}

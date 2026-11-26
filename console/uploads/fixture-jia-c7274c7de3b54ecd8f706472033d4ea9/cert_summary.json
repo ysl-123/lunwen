@@ -1,0 +1,6 @@
+{
+  "present": true,
+  "signature_algorithm": "SM2-with-SM3",
+  "dual_cert": false,
+  "note": "甲档 SM2 证书"
+}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}计划 · 自测台{% endblock %}
+{% block body %}
+<h1>计划</h1>
+{% if message %}<p class="ok">{{ message }}</p>{% endif %}
+<p>第三级条款卡已全部列出。点「开始」后，只读取刚才上传的那一次提交。</p>
+<p>共 {{ units | length }} 条，高风险优先 {{ high_risk_count }} 条。</p>
+<table>
+  <thead>
+    <tr>
+      <th>单元</th>
+      <th>层面</th>
+      <th>条款</th>
+      <th>强度</th>
+      <th>高风险</th>
+      <th>对象</th>
+      <th>采集</th>
+      <th>不符合</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for unit in units %}
+    <tr>
+      <td>{{ unit.unit_id }}</td>
+      <td>{{ unit.layer }}</td>
+      <td>{{ unit.clause_title }}<br>{{ unit.excerpt }}</td>
+      <td>{{ unit.strength }}</td>
+      <td>{% if unit.high_risk %}是{% else %}否{% endif %}</td>
+      <td>{{ unit.object }}</td>
+      <td>{{ unit.collectors | join("、") }}</td>
+      <td>{{ unit.fail_when }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<form method="post" action="/start">
+  <p><button type="submit">开始</button></p>
+</form>
+{% endblock %}

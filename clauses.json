@@ -1,0 +1,396 @@
+{
+  "standard": "GB/T 39786",
+  "level": "第三级",
+  "clauses": [
+    {
+      "id": "PHY-AUTH",
+      "name": "物理访问身份鉴别",
+      "title": "物理访问身份鉴别",
+      "layer": "物理和环境",
+      "strength": "宜",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "宜采用密码技术进行物理访问身份鉴别，保证重要区域进入人员身份的真实性。"
+    },
+    {
+      "id": "PHY-GATE",
+      "name": "电子门禁记录存储完整性",
+      "title": "电子门禁记录存储完整性",
+      "layer": "物理和环境",
+      "strength": "宜",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "宜采用密码技术保证电子门禁系统进出记录数据的存储完整性。"
+    },
+    {
+      "id": "PHY-VIDEO",
+      "name": "视频监控记录存储完整性",
+      "title": "视频监控记录存储完整性",
+      "layer": "物理和环境",
+      "strength": "宜",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "宜采用密码技术保证视频监控音像记录数据的存储完整性。"
+    },
+    {
+      "id": "NET-AUTH",
+      "name": "通信实体身份鉴别",
+      "title": "通信实体身份鉴别",
+      "layer": "网络和通信",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术对通信实体进行身份鉴别，保证通信实体身份的真实性。"
+    },
+    {
+      "id": "NET-INTEGRITY",
+      "name": "通信数据完整性",
+      "title": "通信数据完整性",
+      "layer": "网络和通信",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证通信过程中数据的完整性。"
+    },
+    {
+      "id": "NET-CONF",
+      "name": "通信机密性",
+      "title": "通信过程中重要数据的机密性",
+      "layer": "网络和通信",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证通信过程中重要数据的机密性。"
+    },
+    {
+      "id": "NET-BOUNDARY",
+      "name": "网络边界访问控制信息完整性",
+      "title": "网络边界访问控制信息完整性",
+      "layer": "网络和通信",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证网络边界访问控制信息的完整性。"
+    },
+    {
+      "id": "NET-ACCESS",
+      "name": "外部设备接入认证",
+      "title": "外部设备接入认证",
+      "layer": "网络和通信",
+      "strength": "可",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "可采用密码技术对从外部连接到内部网络的设备进行接入认证，确保接入设备身份的真实性。"
+    },
+    {
+      "id": "DEV-AUTH",
+      "name": "设备身份鉴别",
+      "title": "身份鉴别",
+      "layer": "设备和计算",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术对登录设备的用户进行身份鉴别，保证用户身份的真实性。"
+    },
+    {
+      "id": "DEV-REMOTE",
+      "name": "远程管理通道",
+      "title": "远程管理通道",
+      "layer": "设备和计算",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "远程管理设备时，应采用密码技术建立安全的信息传输通道。"
+    },
+    {
+      "id": "DEV-ACL",
+      "name": "系统资源访问控制信息完整性",
+      "title": "系统资源访问控制信息完整性",
+      "layer": "设备和计算",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证系统资源访问控制信息的完整性。"
+    },
+    {
+      "id": "DEV-LABEL",
+      "name": "重要信息资源安全标记完整性",
+      "title": "重要信息资源安全标记完整性",
+      "layer": "设备和计算",
+      "strength": "宜",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "宜采用密码技术保证设备中重要信息资源安全标记的完整性。"
+    },
+    {
+      "id": "DEV-LOG",
+      "name": "日志记录完整性",
+      "title": "日志记录完整性",
+      "layer": "设备和计算",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证日志记录的完整性。"
+    },
+    {
+      "id": "DEV-BIN",
+      "name": "重要可执行程序完整性",
+      "title": "重要可执行程序完整性",
+      "layer": "设备和计算",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术对重要可执行程序进行完整性保护，并对其来源进行真实性验证。"
+    },
+    {
+      "id": "APP-AUTH",
+      "name": "应用身份鉴别",
+      "title": "身份鉴别",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术对登录用户进行身份鉴别，保证应用系统用户身份的真实性。"
+    },
+    {
+      "id": "APP-ACL",
+      "name": "访问控制信息完整性",
+      "title": "访问控制信息完整性",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证信息系统应用的访问控制信息的完整性。"
+    },
+    {
+      "id": "APP-TRANS-CONF",
+      "name": "重要数据传输机密性",
+      "title": "重要数据传输机密性",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证重要数据在传输过程中的机密性。"
+    },
+    {
+      "id": "APP-STORE-CONF",
+      "name": "存储机密性",
+      "title": "重要数据存储机密性",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": true,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证重要数据在存储过程中的机密性。"
+    },
+    {
+      "id": "APP-TRANS-INT",
+      "name": "重要数据传输完整性",
+      "title": "重要数据传输完整性",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证重要数据在传输过程中的完整性。"
+    },
+    {
+      "id": "APP-STORE-INT",
+      "name": "重要数据存储完整性",
+      "title": "重要数据存储完整性",
+      "layer": "应用和数据",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应采用密码技术保证重要数据在存储过程中的完整性。"
+    },
+    {
+      "id": "APP-NR",
+      "name": "不可否认性",
+      "title": "不可否认性",
+      "layer": "应用和数据",
+      "strength": "宜",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "在可能涉及法律责任认定的应用中，宜采用密码技术提供数据原发证据和数据接收证据，实现数据原发行为的不可否认性和数据接收行为的不可否认性。"
+    },
+    {
+      "id": "MGMT-POLICY",
+      "name": "密码应用安全管理制度",
+      "title": "密码应用安全管理制度",
+      "layer": "管理制度",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应具备密码应用安全管理制度，包括密码人员管理、密钥管理、建设运行、应急处置、密码软硬件及介质管理等制度。"
+    },
+    {
+      "id": "MGMT-PROCEDURE",
+      "name": "操作规程",
+      "title": "操作规程",
+      "layer": "管理制度",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应根据密码应用安全管理制度制定操作规程。"
+    },
+    {
+      "id": "MGMT-REVIEW",
+      "name": "制度修订",
+      "title": "制度修订",
+      "layer": "管理制度",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应定期对密码应用安全管理制度和操作规程的合理性和适用性进行论证和审定，对存在不足的制度进行修订。"
+    },
+    {
+      "id": "MGMT-PUBLISH",
+      "name": "制度发布",
+      "title": "制度发布",
+      "layer": "管理制度",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应明确相关密码应用安全管理制度和操作规程的发布流程并进行版本控制。"
+    },
+    {
+      "id": "MGMT-RECORD",
+      "name": "制度执行记录",
+      "title": "制度执行记录",
+      "layer": "管理制度",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应具有密码应用操作规程的相关执行记录并妥善保存。"
+    },
+    {
+      "id": "PE-LAW",
+      "name": "人员遵守法律法规",
+      "title": "人员遵守法律法规",
+      "layer": "人员管理",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "相关人员应了解并遵守密码相关法律法规和密码应用安全管理制度。"
+    },
+    {
+      "id": "PE-DUTY",
+      "name": "岗位责任",
+      "title": "岗位责任",
+      "layer": "人员管理",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应建立密码应用岗位责任制度，明确各岗位在安全系统中的职责和权限。"
+    },
+    {
+      "id": "PE-TRAIN",
+      "name": "上岗培训",
+      "title": "上岗培训",
+      "layer": "人员管理",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应建立上岗人员培训制度，对涉及密码的操作和管理人员进行专门培训。"
+    },
+    {
+      "id": "PE-ASSESS",
+      "name": "人员考核",
+      "title": "人员考核",
+      "layer": "人员管理",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应定期对密码应用安全岗位人员进行考核。"
+    },
+    {
+      "id": "PE-SECRET",
+      "name": "保密与调离",
+      "title": "保密与调离",
+      "layer": "人员管理",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应建立关键岗位人员保密制度和调离制度，签订保密合同，承担保密义务。"
+    },
+    {
+      "id": "BUILD-SCHEME",
+      "name": "密码应用方案",
+      "title": "密码应用方案",
+      "layer": "建设运行",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应依据密码相关标准和密码应用需求制定密码应用方案。"
+    },
+    {
+      "id": "BUILD-KEY",
+      "name": "密钥安全管理策略",
+      "title": "密钥安全管理策略",
+      "layer": "建设运行",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应根据密码应用方案确定系统涉及的密钥种类、体系及其生命周期环节，并明确各环节安全管理要求。"
+    },
+    {
+      "id": "BUILD-IMPL",
+      "name": "按方案实施",
+      "title": "按方案实施",
+      "layer": "建设运行",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应按照密码应用方案实施建设。"
+    },
+    {
+      "id": "BUILD-EVAL",
+      "name": "运行前评估",
+      "title": "运行前评估",
+      "layer": "建设运行",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "投入运行前应进行密码应用安全性评估，评估通过后系统方可正式运行。"
+    },
+    {
+      "id": "BUILD-RUN",
+      "name": "运行中执行与复评",
+      "title": "运行中执行与复评",
+      "layer": "建设运行",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "在运行过程中应严格执行密码应用安全管理制度，并定期开展密码应用安全性评估及整改。"
+    },
+    {
+      "id": "EMG-PREP",
+      "name": "应急策略",
+      "title": "应急策略",
+      "layer": "应急处置",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "应制定密码应用应急策略，做好应急资源准备。"
+    },
+    {
+      "id": "EMG-ACT",
+      "name": "应急启动",
+      "title": "应急启动",
+      "layer": "应急处置",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "事件发生后应及时向信息系统责任单位报告，并立即启动应急处置措施。"
+    },
+    {
+      "id": "EMG-REPORT",
+      "name": "处置后报告",
+      "title": "处置后报告",
+      "layer": "应急处置",
+      "strength": "应",
+      "high_risk": false,
+      "standard": "GB/T 39786",
+      "excerpt": "事件处置完成后应及时向信息系统责任单位及归属的密码管理部门报告事件发生情况及处置情况。"
+    }
+  ]
+}

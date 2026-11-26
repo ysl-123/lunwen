@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "id": "F-CL-PHY-AUTH",
+      "clause_id": "PHY-AUTH",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PHY-GATE",
+      "clause_id": "PHY-GATE",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PHY-VIDEO",
+      "clause_id": "PHY-VIDEO",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-MGMT-POLICY",
+      "clause_id": "MGMT-POLICY",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-MGMT-PROCEDURE",
+      "clause_id": "MGMT-PROCEDURE",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-MGMT-REVIEW",
+      "clause_id": "MGMT-REVIEW",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-MGMT-PUBLISH",
+      "clause_id": "MGMT-PUBLISH",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-MGMT-RECORD",
+      "clause_id": "MGMT-RECORD",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PE-LAW",
+      "clause_id": "PE-LAW",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PE-DUTY",
+      "clause_id": "PE-DUTY",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PE-TRAIN",
+      "clause_id": "PE-TRAIN",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PE-ASSESS",
+      "clause_id": "PE-ASSESS",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-PE-SECRET",
+      "clause_id": "PE-SECRET",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-BUILD-SCHEME",
+      "clause_id": "BUILD-SCHEME",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-BUILD-KEY",
+      "clause_id": "BUILD-KEY",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-BUILD-IMPL",
+      "clause_id": "BUILD-IMPL",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-BUILD-EVAL",
+      "clause_id": "BUILD-EVAL",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-BUILD-RUN",
+      "clause_id": "BUILD-RUN",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-EMG-PREP",
+      "clause_id": "EMG-PREP",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-EMG-ACT",
+      "clause_id": "EMG-ACT",
+      "filename": ""
+    },
+    {
+      "id": "F-CL-EMG-REPORT",
+      "clause_id": "EMG-REPORT",
+      "filename": ""
+    }
+  ]
+}

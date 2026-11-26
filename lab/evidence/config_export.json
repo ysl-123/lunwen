@@ -1,0 +1,67 @@
+{
+  "facts": [
+    {
+      "id": "F-006",
+      "topic": "app_login",
+      "method": "plaintext"
+    },
+    {
+      "id": "F-007",
+      "topic": "user_columns",
+      "columns": [
+        "id",
+        "username",
+        "password",
+        "phone"
+      ],
+      "integrity_columns": []
+    },
+    {
+      "id": "F-008",
+      "topic": "routes",
+      "paths": [
+        "/",
+        "/login",
+        "/profile",
+        "/logout",
+        "/health"
+      ],
+      "remote_admin": false
+    },
+    {
+      "id": "F-009",
+      "topic": "security_label",
+      "present": false
+    },
+    {
+      "id": "F-010",
+      "topic": "log_integrity",
+      "present": false
+    },
+    {
+      "id": "F-011",
+      "topic": "executable_integrity",
+      "present": false
+    },
+    {
+      "id": "F-012",
+      "topic": "non_repudiation",
+      "present": false
+    },
+    {
+      "id": "F-013",
+      "topic": "access_control_integrity",
+      "present": false
+    },
+    {
+      "id": "F-014",
+      "topic": "device_login",
+      "present": false
+    },
+    {
+      "id": "F-015",
+      "topic": "transfer_integrity",
+      "present": false
+    }
+  ]
+}

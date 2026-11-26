@@ -1,0 +1,10 @@
+{
+  "table": "users",
+  "rows": [
+    {"username": "test", "password": "123456", "phone": "13800000000"}
+  ],
+  "fields": {
+    "口令": {"fact_id": "F-004", "column": "password", "value": "123456", "storage": "plaintext", "algorithm": null},
+    "手机号": {"fact_id": "F-005", "column": "phone", "value": "13800000000", "storage": "plaintext", "algorithm": null}
+  }
+}

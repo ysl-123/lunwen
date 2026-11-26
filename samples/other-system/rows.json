@@ -1,0 +1,26 @@
+{
+  "table": "users",
+  "rows": [
+    {
+      "username": "other",
+      "password": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "phone": "aes-gcm:other-system-phone"
+    }
+  ],
+  "fields": {
+    "口令": {
+      "fact_id": "F-004",
+      "column": "password",
+      "value": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "storage": "hash",
+      "algorithm": "SHA-256"
+    },
+    "手机号": {
+      "fact_id": "F-005",
+      "column": "phone",
+      "value": "aes-gcm:other-system-phone",
+      "storage": "ciphertext",
+      "algorithm": "AES"
+    }
+  }
+}

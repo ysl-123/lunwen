@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}上传 · 自测台{% endblock %}
+{% block body %}
+<h1>上传材料</h1>
+<p>自测台不读取演示网站，也不打开 lab/evidence。把五份 JSON 交上来，制度文件可以不交。文件只保存在这次提交里。</p>
+{% if submission %}<p>当前提交：<strong>{{ submission }}</strong></p>{% endif %}
+{% if message %}<p class="ok">{{ message }}</p>{% endif %}
+{% for item in errors %}<p class="err">{{ item }}</p>{% endfor %}
+<form method="post" action="/upload" enctype="multipart/form-data">
+  {% for name in required %}
+  <label for="file-{{ name }}">{{ name }}</label>
+  <input id="file-{{ name }}" name="{{ name }}" type="file">
+  {% endfor %}
+  <h2>制度文件</h2>
+  <p>可选。没有真实文件的条款保持未提供。正文里对不上该条原文，就是证据不足。</p>
+  {% for unit in checklist %}
+  <label for="policy-{{ unit.clause_id }}">{{ unit.layer }} · {{ unit.name }}</label>
+  <input id="policy-{{ unit.clause_id }}" name="policy-{{ unit.clause_id }}" type="file">
+  {% endfor %}
+  <p><button type="submit">上传并查看计划</button></p>
+</form>
+{% endblock %}

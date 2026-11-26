@@ -1,0 +1,309 @@
+[
+  {
+    "id": "F-001",
+    "tool": "current_profile",
+    "data": {
+      "grade": "丙",
+      "entry": "http://127.0.0.1:8000"
+    }
+  },
+  {
+    "id": "F-002",
+    "tool": "channel_facts",
+    "data": {
+      "protocol": "HTTP",
+      "suite": "无",
+      "cert_signature_algorithm": null,
+      "note": "丙档夹具"
+    }
+  },
+  {
+    "id": "F-003",
+    "tool": "login_observation",
+    "data": {
+      "observed": true,
+      "password_in_clear": true,
+      "protocol": "HTTP",
+      "suite": "无"
+    }
+  },
+  {
+    "id": "F-004",
+    "tool": "field_storage",
+    "data": {
+      "field": "口令",
+      "storage": "plaintext",
+      "algorithm": null
+    }
+  },
+  {
+    "id": "F-005",
+    "tool": "field_storage",
+    "data": {
+      "field": "手机号",
+      "storage": "plaintext",
+      "algorithm": null
+    }
+  },
+  {
+    "id": "F-006",
+    "tool": "current_profile",
+    "data": {
+      "topic": "app_login",
+      "method": "plaintext"
+    }
+  },
+  {
+    "id": "F-007",
+    "tool": "current_profile",
+    "data": {
+      "topic": "user_columns",
+      "columns": [
+        "id",
+        "username",
+        "password",
+        "phone"
+      ],
+      "integrity_columns": []
+    }
+  },
+  {
+    "id": "F-008",
+    "tool": "current_profile",
+    "data": {
+      "topic": "routes",
+      "paths": [
+        "/",
+        "/login",
+        "/profile",
+        "/logout",
+        "/health"
+      ],
+      "remote_admin": false
+    }
+  },
+  {
+    "id": "F-009",
+    "tool": "current_profile",
+    "data": {
+      "topic": "security_label",
+      "present": false
+    }
+  },
+  {
+    "id": "F-010",
+    "tool": "current_profile",
+    "data": {
+      "topic": "log_integrity",
+      "present": false
+    }
+  },
+  {
+    "id": "F-011",
+    "tool": "current_profile",
+    "data": {
+      "topic": "executable_integrity",
+      "present": false
+    }
+  },
+  {
+    "id": "F-012",
+    "tool": "current_profile",
+    "data": {
+      "topic": "non_repudiation",
+      "present": false
+    }
+  },
+  {
+    "id": "F-013",
+    "tool": "current_profile",
+    "data": {
+      "topic": "access_control_integrity",
+      "present": false
+    }
+  },
+  {
+    "id": "F-014",
+    "tool": "current_profile",
+    "data": {
+      "topic": "device_login",
+      "present": false
+    }
+  },
+  {
+    "id": "F-015",
+    "tool": "current_profile",
+    "data": {
+      "topic": "transfer_integrity",
+      "present": false
+    }
+  },
+  {
+    "id": "F-CL-PHY-AUTH",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PHY-AUTH",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PHY-GATE",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PHY-GATE",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PHY-VIDEO",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PHY-VIDEO",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-MGMT-POLICY",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "MGMT-POLICY",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-MGMT-PROCEDURE",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "MGMT-PROCEDURE",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-MGMT-REVIEW",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "MGMT-REVIEW",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-MGMT-PUBLISH",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "MGMT-PUBLISH",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-MGMT-RECORD",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "MGMT-RECORD",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PE-LAW",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PE-LAW",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PE-DUTY",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PE-DUTY",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PE-TRAIN",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PE-TRAIN",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PE-ASSESS",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PE-ASSESS",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-PE-SECRET",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "PE-SECRET",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-BUILD-SCHEME",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "BUILD-SCHEME",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-BUILD-KEY",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "BUILD-KEY",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-BUILD-IMPL",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "BUILD-IMPL",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-BUILD-EVAL",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "BUILD-EVAL",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-BUILD-RUN",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "BUILD-RUN",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-EMG-PREP",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "EMG-PREP",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-EMG-ACT",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "EMG-ACT",
+      "filename": ""
+    }
+  },
+  {
+    "id": "F-CL-EMG-REPORT",
+    "tool": "current_profile",
+    "data": {
+      "clause_id": "EMG-REPORT",
+      "filename": ""
+    }
+  }
+]
